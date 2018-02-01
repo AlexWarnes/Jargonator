@@ -1,0 +1,90 @@
+body * {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	background-color: skyblue;
+	color: white;
+}
+
+header {
+	padding: 30px;
+	font-size: 50px;
+	text-align: center;
+}
+
+main {
+	margin-bottom: 100px;
+}
+
+button.jargonButton {
+	padding: 20px;
+	background-color: green;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+div.jargonCards {
+	margin-right: auto;
+	margin-left: auto;
+	width: fit-content;
+/*	width: 90%;
+	max-width: 600px;
+	max-height: 750px;*/
+	background-color: black;
+	/*background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	color: white;
+	font-size: 0;
+}
+
+section.companyCard {
+	vertical-align: middle;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	background-color: black;
+	background-image: url('https://picsum.photos/300/300/?random&blur');
+	background-position: center;
+	text-align: center;
+	padding: 50px 20px 20px 20px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+section.infoCard {
+	vertical-align: middle;
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	background-color: darkgray;
+	text-align: left;
+	padding: 50px 20px 20px 20px;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+
+p.motto {
+	font-weight: 200;
+	font-style: italic;
+}
+
+p.friend, p.location {
+	font-weight: 200;
+	margin-left: 20px;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+}
