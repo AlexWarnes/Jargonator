@@ -3,14 +3,14 @@
 function useSomeJargon() {
 	$('.jargonButton').on('click', function(e) {
 		e.preventDefault();
-		console.log('Quick, think of something...');
+		console.log('Quick, think of something smart to say...');
 		getJargon(displayJargon);
 	});
 }
 
 function displayJargon(data) {
 	$('.jargonDiv').html(
-		`<section class="jargonCard">
+		`<section role="region" class="jargonCard">
 			<p class="motto">"${data.motto}"</p>
 		</section>
 		`);

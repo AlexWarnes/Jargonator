@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" name="Description" content="Unexpected meeting? Say something smart with Jargonator">
+	<meta charset="UTF-8">
+	<meta name="description" content="Unexpected meeting? Say something smart with Jargonator.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jargonator</title>
-	<!-- <link rel="icon" href="./Assets/filename"> -->
+	<link rel="icon" href="./Assets/bubble.png">
 		
 	<!-- STYLES -->
 
@@ -17,19 +18,20 @@
 			<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<header>
+	<header role="banner">
 		<h1>JARGONATOR</h1>
 		<p>Say something... without really saying anything.</p>
 	</header>
 
-	<main>
-	<button class="jargonButton">Activate Synergies</button>
-	<div class="jargonDiv">
+	<main role="main">
+		<button role="button" class="jargonButton">Activate Synergies</button>
+		
+		<div class="jargonDiv" aria-live="assertive">
+		</div>
 
-	</div>
 	</main>
 	
-	<footer>
+	<footer role="contentinfo">
 		<p>Powered by <a href="https://www.npmjs.com/package/faker" target="_blank">Faker</a></p>
 		<a href="https://github.com/AlexWarnes/jargonator" target="_blank">sourcecode <i class="fab fa-github"></i></a>
 	</footer>

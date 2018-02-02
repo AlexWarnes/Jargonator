@@ -10,8 +10,8 @@ app.use(express.static('public'));
 
 app.get('/jargon', (req, res) => {
 	let jargon = {
-		bs: faker.company.bs(),
 		motto: faker.company.catchPhrase(),
+		bs: faker.company.bs(),
 		hackerAdjective: faker.hacker.adjective(),
 		hackerNoun: faker.hacker.noun(),
 		hackerVerb: faker.hacker.verb()
