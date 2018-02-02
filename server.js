@@ -10,13 +10,11 @@ app.use(express.static('public'));
 
 app.get('/jargon', (req, res) => {
 	let jargon = {
-		company: faker.company.companyName(),
+		bs: faker.company.bs(),
 		motto: faker.company.catchPhrase(),
-		friend: {
-			firstName: faker.name.firstName(),
-			lastName: faker.name.lastName()
-		},
-		location: faker.address.city()
+		hackerAdjective: faker.hacker.adjective(),
+		hackerNoun: faker.hacker.noun(),
+		hackerVerb: faker.hacker.verb()
 	};
 	res.status(200).json(jargon);
 })

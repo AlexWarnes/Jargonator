@@ -5,86 +5,94 @@ body * {
 
 body {
 	text-align: center;
-	background-color: skyblue;
+	height: 100vh;
+	background-color: #EFF6FC;
 	color: white;
 }
 
 header {
-	padding: 30px;
-	font-size: 50px;
+	padding: 30px 20px 0 20px;
 	text-align: center;
+	color: #2D3142;
 }
 
-main {
-	margin-bottom: 100px;
+h1 {
+	font-size: 7vh;
+	margin-bottom: 20px;
+}
+
+header p {
+	font-size: 4vh;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 button.jargonButton {
 	padding: 20px;
-	background-color: green;
+	background-color: #2E6847;
 	border: none;
 	color: white;
 	border-radius: 5px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+	box-shadow: 0px 0px 15px gray;
+	transition: all, 0.25s ease;
 }
 
-div.jargonCards {
+button.jargonButton:hover {
+	background-color: #9E454C;
+	border-radius: 30px;
+	box-shadow: 0 0 5px gray;
+	cursor: pointer;
+}
+
+div.jargonDiv {
 	margin-right: auto;
 	margin-left: auto;
 	width: fit-content;
-/*	width: 90%;
-	max-width: 600px;
-	max-height: 750px;*/
-	background-color: black;
-	/*background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;*/
 	color: white;
-	font-size: 0;
 }
 
-section.companyCard {
+section.jargonCard {
 	vertical-align: middle;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 175px;
 	display: inline-block;
-	background-color: black;
-	background-image: url('https://picsum.photos/300/300/?random&blur');
-	background-position: center;
+	background-color: #028090B9;
 	text-align: center;
-	padding: 50px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 	margin: 0 auto;
 	font-size: 20px;
-}
-
-section.infoCard {
-	vertical-align: middle;
-	width: 300px;
-	height: 300px;
-	display: inline-block;
-	background-color: darkgray;
-	text-align: left;
-	padding: 50px 20px 20px 20px;
-	margin: 0 auto;
-	font-weight: 300;
-	font-size: 18px;
-}
-
-
-p.motto {
 	font-weight: 200;
-	font-style: italic;
-}
-
-p.friend, p.location {
-	font-weight: 200;
-	margin-left: 20px;
+	color: white;
+	border-radius: 5px;
+	display: none;
 }
 
 footer {
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 	padding: 10px;
-	font-size: 20px;
-	text-align: center;
+	font-size: 15px;
+	text-align: right;
+	background-color: #2D3142;
+	box-shadow: 0px -5px 20px silver;
+}
+
+footer p {
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+	bottom: -5px;
+}
+
+footer a {
+	color: #E6F2F2;
+	transition: all, 0.5s, ease;
+}
+
+footer a:hover {
+	color: #00FFE0;
 }

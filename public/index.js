@@ -9,18 +9,12 @@ function useSomeJargon() {
 }
 
 function displayJargon(data) {
-	$('.jargonCards').html(
-		`<section class="companyCard">
-			<h3>${data.company}</h3>
-			<p class="motto">${data.motto}</p>
-		</section>
-		<section class="infoCard">
-			<p>They're based out of:</p>
-			<p class="location">${data.location}</p>
-			<p>Your friend who works there:</p>
-			<p class="friend"> ${data.friend.firstName} ${data.friend.lastName}</p>
+	$('.jargonDiv').html(
+		`<section class="jargonCard">
+			<p class="motto">"${data.motto}"</p>
 		</section>
 		`);
+	$('.jargonCard').fadeIn(500);
 }
 
 function getJargon(callback) {
